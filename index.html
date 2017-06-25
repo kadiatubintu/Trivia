@@ -1,0 +1,143 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Trivia Game</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+</head>
+<body>
+   <div class="container">
+   <h1>Trivia Game</h1>
+   	<div class="box1">
+      <div id="timer"></div>
+      <button class="button1">STOP TIMER!</button>
+   		<button class="button2">START</button>
+        <form class="questions" id="q1" data-question="1">
+          <h3>"What is the third most abundant gas in Earths atmosphere?"</h3> 
+          <ul>
+             <li><input type="radio" id="a1" name="a1" value="a">Hydrogen</li>  
+             <li><input type="radio" id="a1" name="a1" value="b">Helium</li>  
+             <li><input type="radio" id="a1" name="a1" value="c">Argon</li>  
+             <li><input type="radio" id="a1" name="a1" value="d">Oxygen</li>  
+          </ul> 
+          <p id=p1></p> 
+          <img  id="img1" src="images/argon.png">  
+        </form>
+
+        <form class="questions" id="q2" data-question="2">
+          <h3>"What was the name of the U.S. research and development project to create nuclear weapons in WWII?"</h3> 
+          <ul>
+             <li><input type="radio" id="a2" name="a2" value="a">The Manhattan Project</li>  
+             <li><input type="radio" id="a2" name="a2" value="b">The Chicago Tribune</li>  
+             <li><input type="radio" id="a2" name="a2" value="c">The Boston Concept</li>  
+             <li><input type="radio" id="a2" name="a2" value="d">Nuclear Task Force</li>  
+          </ul>    
+          <p id=p2></p> 
+          <img  id="img2" src="images/project.jpg">  
+        </form>
+   
+        <form class="questions" id="q3" data-question="3">
+          <h3>"Which animal has the most legs?"</h3> 
+          <ul>
+             <li><input type="radio" id="a3" name="a3" value="a">Octopus</li>  
+             <li><input type="radio" id="a3" name="a3" value="b">Millepede</li>  
+             <li><input type="radio" id="a3" name="a3" value="c">Centipede</li>  
+             <li><input type="radio" id="a3" name="a3" value="d">Grasshopper</li>  
+          </ul>    
+          <p id=p3></p> 
+          <img  id="img3" src="images/millepede.jpg">  
+        </form>
+        <form class="questions" id="q4" data-question="4">
+          <h3>"Who wrote an ancient Chinese military treatise known as The Art of War?"</h3> 
+          <ul>
+             <li><input type="radio" id="a4" name="a4" value="a">Chang Lee</li>  
+             <li><input type="radio" id="a4" name="a4" value="b">Sun Bin</li>  
+             <li><input type="radio" id="a4" name="a4" value="c">Sun Tzu</li>  
+             <li><input type="radio" id="a4" name="a4" value="d">Xi Jinping</li>  
+          </ul>    
+          <p id=p4></p> 
+          <img  id="img4" src="images/SunTzu.jpg">  
+        </form>  
+        <form class="questions" id="q5" data-question="5">
+          <h3>"In what year was the iPhone first released?"</h3> 
+          <ul> 
+             <li><input type="radio" id="a5" name="a5" value="a">1999</li>  
+             <li><input type="radio" id="a5" name="a5" value="b">2005</li>  
+             <li><input type="radio" id="a5" name="a5" value="c">2007</li>  
+             <li><input type="radio" id="a5" name="a5" value="d">2017</li>  
+          </ul>    
+          <p id=p5></p> 
+          <img  id="img5" src="images/iphone.jpg">  
+        </form>
+   
+        <form class="questions" id="q6" data-question="6">
+          <h3>"How many U.S. presidents were only children?"</h3> 
+          <ul> 
+             <li><input type="radio" id="a6" name="a6" value="a">four</li>  
+             <li><input type="radio" id="a6" name="a6" value="b">Two</li>  
+             <li><input type="radio" id="a6" name="a6" value="c">Three</li>  
+             <li><input type="radio" id="a6" name="a6" value="d">Zero</li>  
+          </ul>    
+          <p id=p6></p> 
+          <img  id="img6" src="images/presidents.png">  
+        </form>
+   
+        <form class="questions" id="q7" data-question="7">
+          <h3>"In what year was the US Constitution written?"</h3> 
+          <ul>
+             <li><input type="radio" id="a7" name="a7" value="a">1776</li>  
+             <li><input type="radio" id="a7" name="a7" value="b">1787</li>  
+             <li><input type="radio" id="a7" name="a7" value="c">1904</li>  
+             <li><input type="radio" id="a7" name="a7" value="d">1663</li>  
+          </ul>    
+          <p id=p7></p> 
+          <img  id="img7" src="images/constitution.jpg">  
+        </form>
+   
+        <form class="questions" id="q8" data-question="8">
+          <h3>"The Great Pyramid of Giza is located in what Egyptian city?"</h3> 
+          <ul>
+             <li><input type="radio" id="a8" name="a8" value="a">Giza</li>  
+             <li><input type="radio" id="a8" name="a8" value="b">Asyup</li>  
+             <li><input type="radio" id="a8" name="a8" value="c">Alexandria</li>  
+             <li><input type="radio" id="a8" name="a8" value="d">Cairo</li>  
+          </ul>    
+          <p id=p8></p> 
+          <img  id="img8" src="images/cairo.jpg">  
+        </form>
+   
+        <form class="questions" id="q9" data-question="9">
+          <h3>"Which actor played the main character in the 1990 film Edward Scissorhands?"</h3> 
+          <ul>
+             <li><input type="radio" id="a9" name="a9" value="a">Brad Pitt</li>  
+             <li><input type="radio" id="a9" name="a9" value="b">Will Smith</li>  
+             <li><input type="radio" id="a9" name="a9" value="c">Johnny Depp</li>  
+             <li><input type="radio" id="a9" name="a9" value="d">Kevin Spacey</li>  
+          </ul>    
+          <p id=p9></p> 
+          <img  id="img9" src="images/JDepp.jpg">  
+        </form>
+ 
+        <form class="questions" id="q10" data-question="10">
+          <h3>"In what month is the Earth closest to the sun?"</h3> 
+          <ul>
+             <li><input type="radio" id="a10" name="a10" value="a">January</li>  
+             <li><input type="radio" id="a10" name="a10" value="b">March</li>  
+             <li><input type="radio" id="a10" name="a10" value="c">September</li>  
+             <li><input type="radio" id="a10" name="a10" value="d">February</li>  
+          </ul> 
+          <p id=p10></p> 
+          <img  id="img10" src="images/january.jpg">  
+        </form>
+        <div class="image">
+        </div>
+   	</div>
+    <div class="box2">
+    <div class="result">
+    </div>
+    </div>
+  </div>
+	<script type="text/javascript" src="javascript/game.js"></script>
+</body>
+</html>
